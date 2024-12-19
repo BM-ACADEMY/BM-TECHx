@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="BM TECHX specializes in digital marketing, branding, and web development, providing innovative solutions to boost your online presence.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> BM TECHX | Leading Digital Marketing & Development Agency</title>
+
+    <link rel="shortcut icon" href="assets/img/logo/Logo bmtech.png" type="images/x-icon"/>
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/imageRevealHover.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+ <!-- Font Awesome CDN -->
+ 
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+
+<style>
+.navbar {
+    background-color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+   
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+#k{
+    position: fixed;
+}
+/* Ensure the dropdown menu is visible on hover and accessible on mobile */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    margin: 0;
+    padding: 0.5rem 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+/* Show dropdown menu when parent is active or hovered */
+.dropdown:hover > .dropdown-menu,
+.dropdown-menu .dropdown-item:focus {
+    display: block;
+}
+
+/* Submenu for dropdown */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%; /* Position to the right of the parent */
+    margin-left: 0.1rem;
+    display: none; /* Hide initially */
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Styling for links */
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    background-color: #444; /* Darker background on hover */
+    color: #fff;
+}
+
+/* Fix submenu overlap on smaller screens */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: relative; /* Reset to make them stack */
+        left: 0;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        left: 0; /* Align submenus below parent */
+        top: 100%;
+    }
+}
+
+
+.section-title {
+    margin-left: 0;
+    margin-right: 60px;
+    text-align: left !important; /* Aligns content to the left */
+    /* Adds some padding for spacing */
+}
+
+.title-dm {
+    /* Customize the font as needed */
+    color: white; /* Adjust text color for readability on a black background */
+    line-height: 1.5; /* Improves line spacing */
+}
+
+.sp-one {
+    font-weight: bold; /* Highlights the "New Heights" span */
+}
+@media (max-width: 768px) { /* For mobile screens */
+    .section-title {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .title-dm span {
+        font-size: large; 
+       /* Adjust font size for smaller devices */
+    }
+
+    .sp-one {
+        display: block; /* Place "New Heights" on a new line for better readability */
+    }
+}
+
+@media (max-width: 480px) { /* For very small screens */
+    .title-dm span {
+        font-size: medium; /* Further reduce font size */
+    }
+}
+/* Optional: Add background color and margin for aesthetics */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 100px;  /* 'Adjust the bottom distance */
+  right: 20px;   /* Adjust the right distance */
+  background-color: green;  /* WhatsApp green color */
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #19e712;  /* Darker green on hover */
+}
+
+.whatsapp-btn i {
+  display: block;
+  font-size: 28px; /* Icon size */
+}
+
+.whatsapp-btn:focus {
+  outline: none;
+}
+
+
+
+.s1 {
+    width: 100%; /* Full container width */
+    height: 100px; /* Adjust height as needed */
+}
+
+.s2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure slide height matches container height */
+}
+
+.s2 img {
+    max-width: 80%; /* Adjust to control image size */
+    max-height: 100%; /* Ensure images do not exceed container height */
+    object-fit: contain; /* Maintain image aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .s1 {
+        height: 100px; /* Smaller height for mobile screens */
+    }
+
+    .s2 img {
+        max-width: 90%; /* Adjust image size for smaller screens */
+    }
+}
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+    }
+    .swiper {
+        width: 90%;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    .s2 {
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        border: 1px solid #444;
+        border-radius: 8px;
+    }
+    .s2 img {
+    
+        max-width: 80%; /* Adjust image width */
+    max-height: 90%; /* Prevent the image from exceeding container height */
+    object-fit: fill;
+    }
+
+</style>
+
+
+
+<body>
+
+<!-- backtotop - start -->
+
+<!-- backtotop - end -->
+
+<!-- preloader start -->
+<div id="xb-loadding" class="xb-loader"><div class="loading-spin"></div></div>
+<!-- preloader end -->
+
+<div class="body_wrap" >
+    <header id="xb-header-area" class="header-area header-style-four is-sticky bg-black text-white" >
+        <nav class="navbar navbar-expand-lg d-flex jus navbar-dark" id="ss">
+            <div class="container">
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo/Logo bmtech.png" alt="Logo" class="img-fluid" width="200px" height="200px">
+                </a>
+    
+                <!-- Toggle for Mobile -->
+                
+                <button class="navbar-toggler" type="button" id="navbarToggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="padding-right: 50px !important;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="padding-right: 50px !important;">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"  style="padding-right: 50px !important;">Services</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="seo.html" >SEO Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="local.html">Local Business SEO</a></li>
+                                        <li><a class="dropdown-item" href="outsource.html">Outsource SEO</a></li>
+                                        <li><a class="dropdown-item" href="small.html">Small Business SEO</a></li>
+                                        <li><a class="dropdown-item" href="onpage.html">Onpage SEO</a></li>
+                                        <li><a class="dropdown-item" href="offpage.html">Offpage SEO</a></li>
+                                        <li><a class="dropdown-item" href="competitor.html">Competitor Analysis SEO</a></li>
+                                        <li><a class="dropdown-item" href="technical.html">Technical SEO</a></li>
+                                        <li><a class="dropdown-item" href="whitelabel.html">White Label Backlink <br>Building Services SEO</a></li>
+                                        <li><a class="dropdown-item" href="cms.html">CMS SEO</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="smo.html">SMO Services</a></li>
+                                <li><a class="dropdown-item" href="socialmedia.html">Social Media Management</a></li>
+                                <li><a class="dropdown-item" href="webdesign.html">Web Design Services</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="seo.html">SMM Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="facebook.html">Facebook Marketing</a></li>
+                                        <li><a class="dropdown-item" href="instagram.html">Instagram Marketing</a></li>
+                                        <li><a class="dropdown-item" href="youtube.html">YouTube Marketing</a></li>
+                                        <li><a class="dropdown-item" href="pinterest.html">Pinterest Marketing</a></li>
+                                        <li><a class="dropdown-item" href="linkedin.html">LinkedIn Marketing</a></li>
+                                        <li><a class="dropdown-item" href="twitter.html">Twitter Marketing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="seo.html">Content Marketing </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="contentwriting.html">Content Writing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="seo.html">PPC Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="googleads.html">Google Ads Management</a></li>
+                                        <li><a class="dropdown-item" href="googlesearch.html">Google Search Ads</a></li>
+                                        <li><a class="dropdown-item" href="videoads.html">Video Ads Campaign</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="seo.html">Graphic  Design</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="logodesign.html">Logo Design</a></li>
+                                        <li><a class="dropdown-item" href="animated.html">Animated Video</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="seo.html" >Web Development </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="wordpress.html">WordPress</a></li>
+                                        <li><a class="dropdown-item" href="ecommerce.html">E-commerce</a></li>
+                                        <li><a class="dropdown-item" href="custom.html">Custom Website</a></li>
+                                        <li><a class="dropdown-item" href="website.html">Website Management</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html" style="padding-right: 50px !important;" >Our Works</a>
+                        </li>
+                          
+    
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="padding-right: 50px !important;" >Contact</a>
+                        </li>
+                    </ul>
+    
+                    <!-- Button -->
+
+                    <button class="btn btn-primary" id="getInTouchBtn" onclick="location.href='contact.html'" style="background-color: yellow; color: #000;">
+                        Get in Touch
+                    </button>
+                  
+                </div>
+            </div>
+        </nav>
+        
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </header>
+ 
+
+    <a href="https://wa.me/9944940051" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    <main>
+
+        <!-- hero section start  -->
+        <section class="hero-digital-marketing pos-rel" id="home"> 
+
+            <div class="dm-hero-img wow skewIn" data-wow-delay="250ms">
+                <img src="assets/img/digital-marketing/dm-brand/dm-07.png" alt="">
+            </div>
+            <div class="container" style="margin: 0; padding: 0;">
+                <div class="dm-hero-content pos-rel" style="margin: 0; padding: 0;">
+                    <div class="xb-item--dm-image wow skewIn" data-wow-duration=".7s" style="margin: 0; padding: 0;">
+                        <img src="assets/img/digital-marketing/dm-brand/275_.png" alt="" style="width: 100%; display: block; margin: 0; padding: 0;">
+                    </div>
+                    <h5 class="xb-item--title wow fadeInUp" >Transforming 
+                        <br> 
+                        <span class="sp-two" style="font-size: smaller;">Digital Dreams into</span> 
+                        <span class="sp-one" style="font-size: smaller;"> Reality</span>
+                    </h5>
+                </div>
+            </div>
+            
+            <div class="container ">
+                <div class="dm-hero-content pos-rel ">
+                    <div class="hero-inner ul_li_between mt-40">
+                        <div class="xb-item--holder mt-20 wow fadeInUp" data-wow-delay="350ms" data-wow-duration=".7s">
+                            <div class="xb-item--dm-icon"><img src="assets/img/digital-marketing/icon/dm-hero.png" alt=""></div>
+                            <p class="xb-item--content">
+                                Over 200 expert digital marketers driving impactful results.
+                                <br>We have a global presence, with offices in major markets to support clients worldwide.
+                                <br> Trusted by industry leaders worldwide, we specialize in executing breakthrough projects <br> that set benchmarks for excellence, fueling success across diverse global markets.
+
+
+                            </p>
+                        </div>
+                        <div class="dm-button xb-element-parallax mt-20">
+                            <a href="project.html" class="circle-btn port-btn dm-btn wow fadeInUp" data-wow-delay="450ms" data-wow-duration=".7s">
+                                <div class="button__bg"></div>OUR <br> WORKS
+                            </a>
+                        </div>
+                        <div class="dm-img mt-20 wow skewIn" data-wow-delay="250ms"><img src="assets/img/digital-marketing/hero/dm-06.PNG" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section end  -->
+ 
+        <!-- dm-brand start -->
+        <section class="brand pt-165 pb-130">
+            <div class="container">
+                <span class="dm-brand-title d-block text-center mb-35">OUR NETWORK OF THE MOST INNOVATIVE</span>
+                <div class="dm-brand-slider s1 swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/digital-marketing/dm-brand/brand7.jpeg" style="height: auto;" alt="" ></a>
+                        </div>
+                       
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/digital-marketing/dm-brand/brand1.jpeg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/digital-marketing/dm-brand/brand2.jpeg" alt=""></a>
+                        </div>
+                      
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/digital-marketing/dm-brand/brand3.jpeg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/digital-marketing/dm-brand/brand4.jpeg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/digital-marketing/dm-brand/brand5.jpeg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/digital-marketing/dm-brand/brand6.jpeg" alt=""></a>
+                        </div>
+                       
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/work/brand0001.jpeg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/work/brand0002.jpeg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/work/brand0003.jpeg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide s2 dm-brand">
+                            <a href="#!"><img src="assets/img/work/brand0004.jpeg" alt=""></a>
+                        </div>
+
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- dm-brand end -->
+
+        <!-- service start -->
+        <section class="service-4 pos-rel mb-130" id="services">
+            <div class="container">
+                <div class="section-title section-title--dm mb-55">
+                    <span class="sub-title mb-45 wow fadeInRight" data-wow-duration=".7s">services</span>
+                    <div class="clearfix"></div>
+                    <h3 class="title wow skewIn">Empower Your Success with  <br> <span>BM TECHX's Unmatched Expertise</span></h3>
+                </div>
+            </div>
+            <div class="services-inner pos-rel">
+                <div class="services-bg bg_img" data-background="assets/img/digital-marketing/dm-brand/dm-08.jpg"></div>
+            <div class="dm-service-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="seo.html">.01 <br> SEO (Search Engine Optimization)
+                            </a></h2>
+                            <div class="xb-item--content">Boost your online visibility and rank higher on search engines with our advanced SEO strategies. We drive organic traffic to your website, increasing your brand’s credibility and reach.
+
+                            </div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/digital-marketing/dm-service/seo.png" alt=""></div>
+                        <div class="xb-item--srv_link">
+                            <a href="seo.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="socialmedia.html">.02 <br>Social Media Marketing</a></h2>
+                            <div class="xb-item--content">Engage and grow your audience on the most popular platforms. Our social media experts create campaigns that resonate, building brand loyalty and driving customer conversions.</div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/digital-marketing/dm-service/SMM.png" alt=""></div>
+                        <div class="xb-item--srv_link">
+                            <a href="socialmedia.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="content.html">.03 <br> Content <br> Marketing
+                            </a></h2>
+                            <div class="xb-item--content">Connect with your audience through impactful and relevant content. From blogs and articles to videos and infographics, we help you tell your brand’s story in a way that engages and converts. <br></div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/digital-marketing/dm-service/contM.png" alt=""></div> 
+                        <div class="xb-item--srv_link">
+                            <a href="content.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div> 
+                    </div>
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="ppc.html">.04 <br> Pay-Per-Click (PPC) Advertising
+
+                            </a></h2>
+                            <div class="xb-item--content">Reach potential customers instantly with paid advertising. Our PPC experts maximize your ad spend by crafting campaigns that target the right audience, driving quality traffic to your site. <br> <br></div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/home/pcc.png" alt=""></div>
+                        <div class="xb-item--srv_link"> <br><br>
+                            <a href="ppc.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="googleads.html">.05 <br> Google Ads Management
+                            </a></h2>
+                            <div class="xb-item--content">Optimize your Google Ads with our expert management services! We help you target the right audience, drive traffic, and maximize ROI. Whether boosting conversions or building brand awareness, we craft strategies tailored to your business.</div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/home/file.png" alt=""></div>
+                        <div class="xb-item--srv_link">
+                            <a href="googleads.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="videoads.html">.06 <br> Video Ads <br> Campaign
+                            </a></h2>
+                            <div class="xb-item--content">Engage your audience with powerful video ads! We craft compelling campaigns that captivate, inform, and convert, ensuring your message reaches the right audience.  <br><br> <br><br></div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/home/videoads.png" alt=""></div>
+                        <div class="xb-item--srv_link"> <br><br>
+                            <a href="videoads.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="contentwriting.html">.07 <br> Content 
+                                 Marketing
+                            </a></h2>
+                            <div class="xb-item--content">Content marketing creates valuable content to engage audiences, build trust, and drive conversions. Boost SEO and stand out with blogs, videos, and more!</div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/home/content.png" alt="" height="300px" width="300px" style="padding-left: 60px;" ></div>
+                        <div class="xb-item--srv_link"> 
+                            <a href="contentwriting.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="webdev.html">.08 <br> Web Development and Design <br>
+                            </a></h2>
+                            <div class="xb-item--content">A strong digital presence starts with a stunning website. Our team designs and develops websites that are visually appealing, user-friendly, and optimized for performance.
+                            </div> <br>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/home/webdev.png" alt="" height="400px" width="300px"></div>
+                        <div class="xb-item--srv_link">
+                            <a href="webdev.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+                   
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="logodesign.html">.09 <br>Logo <br>Making <br>
+                            </a></h2>
+                            <div class="xb-item--content">Capture your brand’s essence with a unique and memorable logo designed to make a lasting impact.</div> <br><br>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/home/logo maker.png" alt="" height="400px" width="300px"></div> <br>
+                        <div class="xb-item--srv_link">
+                            <a href="logodesign.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dm-service">
+                        <div class="xb-item--holder">
+                            <h2 class="xb-item--title"><a href="animated.html">.10 <br> Animated<br> Video <br>
+                            </a></h2>
+                            <div class="xb-item--content"> Animated videos are a dynamic and engaging way to communicate your brand message. They capture attention, simplify complex concepts, and boost audience retention. Perfect for storytelling, tutorials, and promotional content.</div>
+                        </div>
+                        <div class="xb-item--image"><img src="assets/img/home/app development.png" alt="" height="400px" width="300px"></div> 
+                        <div class="xb-item--srv_link">
+                            <a href="animated.html">Learn More <span><img src="assets/img/digital-marketing/icon/dm-srv.png" alt=""></span></a>
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- service end -->
+
+        <!-- about start  -->
+        <section class="about pos-rel" id="about-agency">
+            <div class="container">
+                <div class="section-title section-title--dm mb-195">
+                    <span class="sub-title mb-45 wow fadeInRight" data-wow-duration=".7s">about agency</span>
+                    <div class="clearfix"></div>
+                    <h3 class="title wow skewIn">create <span>special Things</span></h3>
+                </div>
+                <div class="title" id="sk" >
+                    <h3 class="title title-dm"><span style="font-size:xx-large;">Join the Ranks of Successful Brands</span> <br> <span style="font-size: xx-large;">Partner with Our Creative Agency and </span> <br> <span style="font-size: xx-large;">Elevate Your Brand to  <span class="sp-one" style="font-size: xx-large; color: yellow;"> New Heights.
+                    </span></span></h3>
+                </div>
+                <div class="dm-about--counter pt-80">
+                    <div class="dm-about--wrapper section-title">
+                       
+                        <div class="inner ul_li mb-55">
+                            <div class="icon">
+                                <img src="assets/img/icon/hero01.svg" alt="">
+                            </div>
+                            <div class="holder">
+                                <h3 class="number xb-odm"><span class="xbo" data-count="450">00</span><span class="suffix">+</span></h3>
+                                <p class="content">Happy Customer</p>
+                            </div>
+                        </div>
+                      
+
+                      
+                       
+                        <div class="inner ul_li mb-55">
+                            <div class="icon">
+                                <img src="assets/img/icon/hero02.svg" alt="">
+                            </div>
+                            <div class="holder">
+                                <h3 class="number xb-odm"><span class="xbo" data-count="10">00</span><span class="suffix">+</span></h3>
+                                <p class="content">Years of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="dm-about--content d-block pt-45">
+                        At BM TECHX, our vision is to redefine the future of web design and development, driving innovation and excellence at every step. We are committed to delivering cutting-edge solutions that align with our clients’ goals, all while upholding the highest standards of integrity and ensuring unmatched customer satisfaction.
+
+                    </span>
+                </div>
+                
+            </div>
+            <div class="dm-about--image bg_img"data-background="assets/img/digital-marketing/about/scs.png"></div>
+        </section>
+        <!-- about end  --> 
+
+        <!-- portfolio start -->
+        <section class="portfolio pt-130" id="portfolio">
+            <div class="container">
+                <div class="section-title section-title--dm mb-30">
+                    <span class="sub-title mb-45 wow fadeInRight" data-wow-duration=".7s">Portfolio</span>
+                    <div class="ul_li_between align-items-end">
+                        <h3 class="title wow skewIn mb-20">Recent Work <br> <span>Portfolio</span></h3>
+                        <a href="project.html" class="d-block dm-port-link mb-20">SEE MORE WORK <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.9981 2.06238C19.0325 1.51117 18.6136 1.0364 18.0624 1.00195L9.07991 0.440543C8.5287 0.406092 8.05392 0.825008 8.01947 1.37622C7.98502 1.92743 8.40394 2.4022 8.95515 2.43665L16.9396 2.93567L16.4405 10.9201C16.4061 11.4713 16.825 11.9461 17.3762 11.9805C17.9274 12.015 18.4022 11.5961 18.4366 11.0449L18.9981 2.06238ZM1.66162 17.7498L18.6616 2.74984L17.3384 1.25016L0.338378 16.2502L1.66162 17.7498Z" fill="white" />
+                          </svg></a>
+                    </div>
+                </div>
+                <div class="dm-portfolio-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide dm-portfolio xb-hover-zoom">
+                            <div class="xb-item--img">
+                                <a href="project-single.html"><img src="assets/img/digital-marketing/portfolio/port-img01.jpeg" alt=""></a>
+                            </div>
+                            <div class="xb-item--holder text-center">
+                                <a class="xb-item--title" href="project-single.html">Professional Design and User Experience</a>
+                                <a class="xb-item--desig" href="project-single.html">The website looks modern and professional, with a user-friendly interface that makes navigation seamless.</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide dm-portfolio xb-hover-zoom">
+                            <div class="xb-item--img">
+                                <a href="project-single.html"><img src="assets/img/digital-marketing/portfolio/port-img02.jpeg" alt=""></a>
+                            </div>
+                            <div class="xb-item--holder text-center">
+                                <a class="xb-item--title" href="project-single.html">Responsive and Functional</a>
+                                <a class="xb-item--desig" href="project-single.html">It works perfectly across all devices, and the loading speed is excellent. The integration of features like the contact form and search functionality is smooth.</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide dm-portfolio xb-hover-zoom">
+                            <div class="xb-item--img">
+                                <a href="project-single.html"><img src="assets/img/digital-marketing/portfolio/port-img03.jpeg" alt=""></a>
+                            </div>
+                            <div class="xb-item--holder text-center">
+                                <a class="xb-item--title" href="project-single.html">Excellent Communication and Timely Delivery</a>
+                                <a class="xb-item--desig" href="project-single.html">The development process was transparent, and all requested changes were implemented promptly. The project was delivered on time without compromising quality.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio end -->
+
+        <!--  marquee start -->
+        <section class="marquee-two pt-120">
+            <div class="dm-marquee db-marquee marquee-left">
+                <div class="marquee-item">SEO (Search Engine Optimization) </div>
+                <div class="marquee-item">Social Media Marketing </div>
+                <div class="marquee-item">Content Marketing </div>
+                <div class="marquee-item">Email Marketing</div>
+                <div class="marquee-item">Pay-Per-Click (PPC) Advertising</div>
+                <div class="marquee-item">Google My Business (GMB) Optimization</div>
+                <div class="marquee-item">Analytics and Reporting</div>
+                <div class="marquee-item">Web Development and Design</div>
+                
+            </div>
+        </section>
+        <!--  marquee end -->
+
+      
+
+        <!-- testimonial start -->
+        <section class="testimonial pt-60" id="testimonial">
+            <div class="container">
+                <div class="section-title section-title--dm mb-30">
+                    <span class="sub-title mb-45 wow fadeInRight" data-wow-duration=".7s">testimonial</span>
+                    <div class="ul_li_between">
+                        <h3 class="title mb-20 wow skewIn">Happy Client <br> <span>feedback</span></h3>
+                        <p class="content dm-por-content mb-20 wow fadeInRight" data-wow-delay="250ms" data-wow-duration=".7s">Their words are a testament to our commitment to excellence and our ability to bring their visions to life. Read on to see how we've made a lasting impact on their brands and projects.</p>
+                    </div>
+                </div>
+                <div class="dm-testimonial-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span class="dm-testimonial--quote"><img src="assets/img/digital-marketing/icon/dm-qu.png" alt=""></span>
+                            <p class="dm-testimonial--content">BM TECHX has completely transformed our digital marketing efforts. From SEO to social media strategy, they’ve helped us refine our brand’s voice and reach a larger audience. The results have been impressive, with an increase in online engagement and conversions. Highly recommend their team for anyone looking to make a real impact online!</p>
+                            <div class="dm-testimonial--avater">
+                                <h2 class="name">Ganesh
+                                <h3 class="title">DesignInfo Private Ltd.</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="dm-testimonial--quote"><img src="assets/img/digital-marketing/icon/dm-qu.png" alt=""></span>
+                            <p class="dm-testimonial--content">The team at BM TECHX went above and beyond to understand our business needs and created a tailored digital marketing strategy that worked wonders. Their attention to detail and personalized approach really set them apart from other agencies. Our sales have seen a significant boost, and we couldn't be more satisfied with their services!</p>
+                            <div class="dm-testimonial--avater">
+                                <h2 class="name">Prabhu</h2>
+                                <h3 class="title">Poclane Construction Equipment Private Ltd.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="dm-testimonial--quote"><img src="assets/img/digital-marketing/icon/dm-qu.png" alt=""></span>
+                            <p class="dm-testimonial--content">BM TECHX is hands down one of the best digital marketing agencies we’ve worked with. Their approach is professional, data-driven, and results-oriented. The growth in our brand awareness and customer base is a direct result of their expert services. We look forward to a continued partnership!
+                            </p>
+                            <div class="dm-testimonial--avater">
+                                <h2 class="name">Nareen</h2>
+                                <h3 class="title">My Gold International </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="dm-testimonial--quote"><img src="assets/img/digital-marketing/icon/dm-qu.png" alt=""></span>
+                            <p class="dm-testimonial--content">The team at BM TECHX has been an invaluable partner in our journey to enhance our digital presence. They provide excellent customer support, are always quick to respond, and deliver top-notch results. We’ve seen incredible growth in our social media engagement, and we’re excited to continue working together.
+                            </p>
+                            <div class="dm-testimonial--avater">
+                                <h2 class="name">Geetha</h2>
+                                <h3 class="title">Shark Fashion Designing Studio</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial end -->
+
+    </main>
+    <!-- main area end  -->
+    
+   <!-- footer strt -->
+    <footer class="dm-footer pos-rel">
+        <div class="dm-footer-line pt-125 pb-120">
+            <div class="container">
+                <div class="row mt-none-40">
+                    <div class="col-lg-4 col-md-6 footer-col mt-40">
+                        <div class="footer-widget">
+                            <div class="footer-logo mb-30">
+                                <a href="index.html"><img src="assets/img/logo/logo.svg" alt=""></a>
+                            </div>
+                            <p>Innovate, Accelerate, and Grow Your Revenue.
+                                Our services are tailored to ensure that businesses can effectively establish and grow their online visibility.
+                                </p>
+                            <ul class="social-list ul_li mt-40">
+                                <li><a href="https://www.facebook.com/profile.php?id=61567695654956"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/105564790/admin/dashboard/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.instagram.com/bmtechxpondy_/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/@BMtechx-abm"><i class="fab fa-youtube"></i></a></li>
+                                <li>
+                                    <a href="https://wa.me/9944940051" target="_blank" title="WhatsApp">
+                                      <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                  </li></ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-col mt-40">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Useful Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="#home">Home </a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#about-agency">About Agency</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#testimonial">Testimonial</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-col mt-40">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">MORE INFO</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="project.html">Our Works</a></li>
+                               
+                               
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-col mt-40">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Contact</h3>
+                            <h6>Address:</h6>
+                            <p>252,2nd Floor,  M G Road, Kottakuppam,<br>
+                               Vanur taluk,  <br> Villupuram district.
+                            </p>  <br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31224.8093270742!2d79.81588974442285!3d11.96749719881581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5363fb62e21843%3A0xb6a2776ea23ea823!2sKottakuppam%2C%20Puducherry%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1731925454616!5m2!1sen!2sin" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                   
+                 <!--   <div class="col-lg-3 col-md-6 footer-col mt-40">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Newsletter</h3>
+                            <p>Frigate mackerel snake mackerel</p>
+                            <form class="footer-newsletter mt-40" action="#">
+                                <input type="text" placeholder="Email">
+                                <button>Send <img src="assets/img/icon/arrow-right3.svg" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-copyright text-center">
+                Copyright © 2024 Auxa. All rights reserved.
+            </div>
+        </div>
+        <div class="dm-footer-bg_icon">
+            <img src="assets/img/digital-marketing/icon/dm-footer.png" alt="">
+        </div>-->
+    </footer>
+    <!-- footer end -->
+
+</div>
+
+     
+<!-- jquery include -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollSmoother.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/odometer.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/jquery.marquee.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/touchspin.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/easing.min.js"></script>
+<script src="assets/js/scrollspy.js"></script>
+<script src="assets/js/ukiyo.min.js"></script>
+<script src="assets/js/lenis.js"></script>
+<script src="assets/js/matter.js"></script>
+<script src="assets/js/throwable.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    var nav = document.getElementById('navbarNav');
+    
+    // Toggle the collapse class to show/hide the navbar
+    nav.classList.toggle('collapse');
+    
+    // Toggle the 'aria-expanded' state
+    var expanded = this.getAttribute('aria-expanded') === 'true' || false;
+    this.setAttribute('aria-expanded', !expanded);
+});
+
+
+// Close submenus when clicking outside
+document.addEventListener('click', function (e) {
+    document.querySelectorAll('.dropdown-menu.show').forEach(function (submenu) {
+        if (!submenu.contains(e.target)) {
+            submenu.classList.remove('show');
+        }
+    });
+});
+
+
+</script>
+
+<script> window.chtlConfig = { chatbotId: "4252753996" } </script>
+<script async data-id="4252753996" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RVXHVZMRNX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RVXHVZMRNX');
+</script>
+
+</body>
+</body>
+
+</html>
+
