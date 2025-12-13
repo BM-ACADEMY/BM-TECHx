@@ -1,0 +1,131 @@
+
+
+
+/* Main Footer */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 60px 0 40px;
+  margin-top: 50px;
+}
+
+/* Container */
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Grid Layout (2 Columns) */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px; /* gap for mobile */
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr; /* About + Contact */
+    gap: 80px; /* big gap for desktop */
+  }
+}
+
+/* About Section */
+.footer-about {
+  max-width: 500px; /* prevent long lines */
+}
+
+.footer-logo {
+  height: 90px;
+}
+
+.footer-text {
+  color: #d1d5db;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Social Icons */
+.footer-social a {
+  color: #d1d5db;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: white;
+}
+
+/* Section Titles */
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* List styles */
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+  color: #d1d5db;
+}
+
+.footer-list a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-list a:hover {
+  color: white;
+}
+
+/* WhatsApp link */
+.whatsapp-link {
+  color: #60a5fa;
+}
+
+.whatsapp-link:hover {
+  color: #93c5fd;
+}
+
+/* Bottom Area */
+.footer-bottom {
+  border-top: 1px solid #1f2937;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: start; /* center copyright */
+  color: #d1d5db;
+  width: 100%; /* Ensure full width within container */
+}
+
+.footer-bottom p {
+  text-align: start; /* Explicitly center text inside <p> */
+  margin: 0; /* Reset any default margins for clean centering */
+}
+
+.footer-bottom a {
+  color: #dabb0e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: white;
+}
+
+.footer-link {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
