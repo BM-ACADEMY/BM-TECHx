@@ -176,58 +176,52 @@
                     </ul>
                 </section>
 
-                <section class="my-12 p-8 rounded-2xl">
+              <section class="my-12 p-8 rounded-2xl">
     <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Success Stories</h2>
 
-    <div class="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+    <div class="relative max-w-2xl mx-auto group">
         
         <div class="overflow-hidden">
-            <img 
-                src="../img/image1.png" 
-                alt="Client Success Result 1" 
-                class="w-full h-auto rounded-lg object-cover  transition-transform duration-300"
-            >
+            <div id="slider-track" class="flex transition-transform duration-500 ease-in-out">
+                
+                <div class="min-w-full">
+                    <img src="../img/image1.png" alt="Client Success Result 1" class="w-full h-auto object-cover">
+                </div>
+                
+                <div class="min-w-full">
+                    <img src="../img/image2.png" alt="Client Success Result 2" class="w-full h-auto object-cover">
+                </div>
+
+                <div class="min-w-full">
+                    <img src="../img/image3.png" alt="Client Success Result 3" class="w-full h-auto object-cover">
+                </div>
+
+                <div class="min-w-full">
+                    <img src="../img/image4.png" alt="Client Success Result 4" class="w-full h-auto object-cover">
+                </div>
+
+                <div class="min-w-full">
+                    <img src="../img/image5.png" alt="Client Success Result 5" class="w-full h-auto object-cover">
+                </div>
+
+                <div class="min-w-full">
+                    <img src="../img/image6.png" alt="Client Success Result 6" class="w-full h-auto object-cover">
+                </div>
+
+            </div>
         </div>
 
-        <div class="overflow-hidden">
-            <img 
-                src="../img/image2.png" 
-                alt="Client Success Result 2" 
-                class="w-full h-auto rounded-lg object-cover  transition-transform duration-300"
-            >
-        </div>
+        <button onclick="prevSlide()" class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
 
-        <div class="overflow-hidden">
-            <img 
-                src="../img/image3.png" 
-                alt="Client Success Result 3" 
-                class="w-full h-auto rounded-lg object-cover  transition-transform duration-300"
-            >
-        </div>
-
-        <div class="overflow-hidden">
-            <img 
-                src="../img/image4.png" 
-                alt="Client Success Result 4" 
-                class="w-full h-auto rounded-lg object-cover  transition-transform duration-300"
-            >
-        </div>
-
-        <div class="overflow-hidden">
-            <img 
-                src="../img/image5.png" 
-                alt="Client Success Result 5" 
-                class="w-full h-auto rounded-lg object-cover  transition-transform duration-300"
-            >
-        </div>
-
-        <div class="overflow-hidden">
-            <img 
-                src="../img/image6.png" 
-                alt="Client Success Result 6" 
-                class="w-full h-auto rounded-lg object-cover  transition-transform duration-300"
-            >
-        </div>
+        <button onclick="nextSlide()" class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
 
     </div>
 
@@ -235,6 +229,39 @@
         Real results from our client partnerships.
     </p>
 </section>
+
+<script>
+    let currentIndex = 0;
+    const track = document.getElementById('slider-track');
+    const slides = track.children;
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+        // Move the track to the left by (currentIndex * 100)%
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+        if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Loop back to start
+        }
+        updateSlider();
+    }
+
+    function prevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalSlides - 1; // Loop to end
+        }
+        updateSlider();
+    }
+
+    // Optional: Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000); 
+</script>
                 <section>
                     <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Grow Your Business?</h2>
                     <p>If you’re ready to take your lead generation and sales to the next level, BM Techx is here to help. Contact us today for a free consultation and see how our smart automation and marketing solutions can transform your business.</p>
