@@ -30,14 +30,17 @@
   h2{font-size:23px;margin-top:36px;color:#161616;}
   h3{font-size:19px;margin-top:26px;color:#161616;}
   p{font-size:16px;}
-  ul{padding-left:20px;}
+  ul{padding-left:40px;}
   li{margin-bottom:6px;}
 
   .section-img{width:100%;height:auto;border-radius:10px;margin:18px 0 8px;display:block;max-height:340px;object-fit:cover;}
 
-  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;}
-  th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;}
-  th{background:#f2f2f7;}
+  table {width:100%; border-collapse:collapse; margin:24px 0; font-size:15px; border-radius:8px; overflow:hidden;}
+  th, td {border:1px solid var(--border); padding:12px 16px; text-align:left;}
+  th:first-child {background-color:#f0fdf4; color:#166534;}
+  td:first-child {background-color:#f0fdf4;}
+  th:nth-child(2) {background-color:#eff6ff; color:#1e40af;}
+  td:nth-child(2) {background-color:#eff6ff;}
 
   .cta-btn{
     display:inline-block; background:var(--indigo); color:#fff !important; text-decoration:none;
@@ -60,6 +63,15 @@
   .checklist{list-style:none;padding-left:0;text-align:left;max-width:360px;margin:16px auto;color:#e0e7ff;}
   .checklist li{margin-bottom:6px;}
 
+  /* FAQ Accordion */
+  .faq-accordion{margin-bottom:12px;border:1px solid var(--border);border-radius:8px;background:#fff;overflow:hidden;}
+  .faq-accordion summary{padding:16px;font-size:17px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#111;}
+  .faq-accordion summary::-webkit-details-marker{display:none;}
+  .faq-accordion summary::after{content:'+';font-size:22px;line-height:1;color:var(--indigo);transition:transform 0.2s ease;}
+  .faq-accordion[open] summary::after{content:'-';}
+  .faq-accordion[open] summary{border-bottom:1px solid var(--border);}
+  .faq-accordion p{padding:16px;margin:0;color:var(--text);font-size:16px;}
+
   .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:22px;}
   .card-label{font-size:12px;font-weight:700;letter-spacing:.5px;color:#9ca3af;text-transform:uppercase;margin-bottom:14px;}
   .brand-row{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
@@ -75,14 +87,140 @@
   .card.consult p{color:#15803d;font-size:14px;margin:0 0 16px;}
   .card.consult .cta-btn.green{width:100%;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;}
 
-  footer{
-    background:#161629; color:#cfcfe6; margin-top:0; padding:36px 20px; font-size:14px;
+  /* Modern Footer */
+  footer {
+    background-color: #0b1120;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: #9ca3af;
+    padding: 60px 20px 30px;
+    font-size: 14px;
+    position: relative;
   }
-  footer .fwrap{max-width:1180px;margin:0 auto;}
-  footer h4{color:#fff;margin-bottom:8px;}
-  footer a{color:#a5b4fc;text-decoration:none;}
-  footer .contact-line{margin-bottom:6px;}
-  footer .copyright{margin-top:20px;font-size:12px;color:#8888aa;border-top:1px solid #2a2a44;padding-top:14px;}
+  
+  footer .fwrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+  }
+  
+  .footer-left {
+    flex: 1 1 400px;
+    max-width: 600px;
+  }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .footer-brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: #fbbf24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .footer-brand-logo svg {
+    width: 24px;
+    height: 24px;
+    stroke: #111;
+  }
+  .footer-brand-text {
+    color: #fbbf24;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-brand-sub {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: rgba(251, 191, 36, 0.7);
+  }
+  
+  .footer-right {
+    flex: 1 1 300px;
+  }
+  
+  .footer-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    display: inline-block;
+    border-bottom: 2px solid #fbbf24;
+    padding-bottom: 8px;
+  }
+  
+  .footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-icon-box svg {
+    width: 18px;
+    height: 18px;
+    stroke: #fbbf24;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .footer-contact-text h5 {
+    color: #fff;
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .footer-contact-text p, .footer-contact-text a {
+    margin: 0;
+    color: #9ca3af;
+    text-decoration: none;
+  }
+  .footer-contact-text a:hover {
+    color: #fbbf24;
+  }
+  
+  footer .copyright {
+    margin-top: 60px;
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #9ca3af;
+    font-size: 13px;
+  }
+  footer .copyright span {
+    color: #fbbf24;
+    font-weight: 600;
+  }
 
   @media (max-width:900px){
     .page{flex-direction:column;}
@@ -103,15 +241,12 @@
       <span>📅 2026</span>
     </div>
 
-    <img class="hero-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="SEO performance dashboard showing search ranking growth charts">
+    <img class="hero-img" src="./img/seo01.jpeg" alt="SEO performance dashboard showing search ranking growth charts">
     <p class="img-caption">Better rankings, more visibility, more enquiries — SEO builds long-term business growth.</p>
 
     <h2>Quick Answer</h2>
     <p>Looking for <strong>SEO services in Pondicherry</strong>? SEO (Search Engine Optimization) helps your business appear on Google when customers search for your products or services. Whether you own a small business, clinic, restaurant, boutique, or startup in Pondicherry, Cuddalore, or Villupuram, SEO can bring consistent organic traffic, quality enquiries, and long-term business growth without relying only on paid advertisements.</p>
 
-    <div class="cta-btn-wrap">
-      <a class="cta-btn" href="https://wa.me/919944288271?text=Hi%2C%20I%20came%20from%20the%20BM%20TECHX%20blog.%20I%E2%80%99d%20like%20to%20know%20more%20about%20SEO%20services%20in%20Pondicherry.">🚀 Get Your Free SEO Consultation</a>
-    </div>
 
     <h2>Why Every Business Needs SEO in 2026</h2>
     <p>Imagine someone in Pondicherry searches:</p>
@@ -135,7 +270,7 @@
     <p>Whether they need a doctor, restaurant, coaching centre, salon, or construction company, their first step is usually Google. If your business is visible online, you are already one step ahead.</p>
 
     <h2>Businesses That Benefit Most from SEO</h2>
-    <img class="section-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Diverse local businesses that benefit from SEO services">
+    <img class="img" src="./img/seo02.jpeg" width="100%" height="100%" alt="Diverse local businesses that benefit from SEO services">
     <p>SEO works well for almost every industry, including:</p>
     <ul>
       <li>Restaurants, Hotels &amp; Resorts, Cafes</li>
@@ -153,14 +288,14 @@
     <p>Customers no longer choose businesses based only on location. They compare Google Reviews, Website, Photos, Search Rankings, and Online Reputation. Businesses that invest in SEO gain a clear advantage.</p>
 
     <div class="cta-btn-wrap">
-      <a class="cta-btn green" href="https://wa.me/919944288271?text=Hi%2C%20I%20came%20from%20the%20BM%20TECHX%20blog.%20I%E2%80%99d%20like%20to%20know%20how%20SEO%20can%20help%20my%20business%20stand%20out%20in%20Pondicherry.">📈 See How SEO Can Grow Your Business</a>
+      <a class="cta-btn green" href="https://portfolio-of.bmtechx.in/" target="_blank">📈 See How SEO Can Grow Your Business</a>
     </div>
 
     <h2>What Do SEO Services Include?</h2>
     <p>Professional SEO is much more than adding keywords to a website. A complete SEO strategy includes several important activities.</p>
 
     <h3>1. Website SEO Audit</h3>
-    <img class="section-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="Website SEO audit dashboard showing technical performance data">
+    <img class="section-img" src="./img/seo03.jpeg" alt="Website SEO audit dashboard showing technical performance data">
     <p>The first step is understanding your website's current condition. An SEO audit checks website speed, mobile responsiveness, broken links, technical issues, duplicate content, indexing problems, and user experience. This creates a roadmap for improvement.</p>
 
     <h3>2. Keyword Research</h3>
@@ -180,7 +315,7 @@
     </div>
 
     <h3>6. Content Marketing</h3>
-    <img class="section-img" src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop" alt="Content marketing and blog strategy planning workflow">
+   
     <p>Google rewards websites that regularly publish useful content — blogs, service pages, FAQs, case studies, and location-specific content. Helpful content builds trust and attracts visitors naturally.</p>
 
     <h3>7. Link Building</h3>
@@ -229,7 +364,7 @@
     <p>SEO is a long-term investment that rewards consistency.</p>
 
     <h2>Real Example: A Boutique in Pondicherry</h2>
-    <img class="section-img" src="https://images.unsplash.com/photo-1654277041042-8927699fcfd2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29vZ2xlJTIwYWRzfGVufDB8fDB8fHww" alt="Small boutique business growing online presence through SEO">
+    <img class="img" src="./img/seo04.jpeg" width="100%" height="100%" alt="Small boutique business growing online presence through SEO">
     <p>Consider a boutique run by a woman entrepreneur in Pondicherry. Initially: no website, limited Instagram presence, no Google visibility, and few enquiries outside existing customers.</p>
     <p>After implementing SEO: a professional website, optimized product pages, Google Business Profile updates, location-based content, and a customer review strategy.</p>
     <p>Within several months: more website visits, better Google rankings, increased enquiries, improved trust, and more repeat customers. This demonstrates how SEO can support steady business growth.</p>
@@ -269,35 +404,55 @@
 
     <h2>Frequently Asked Questions</h2>
 
-    <h3>1. What are SEO services?</h3>
-    <p>SEO services improve your website's visibility on Google through optimization, content creation, technical improvements, and local search strategies.</p>
+    <details class="faq-accordion">
+      <summary>1. What are SEO services?</summary>
+      <p>SEO services improve your website's visibility on Google through optimization, content creation, technical improvements, and local search strategies.</p>
+    </details>
 
-    <h3>2. How long does SEO take to show results?</h3>
-    <p>Most businesses begin seeing noticeable improvements within 3 to 6 months, depending on competition, website quality, and consistency.</p>
+    <details class="faq-accordion">
+      <summary>2. How long does SEO take to show results?</summary>
+      <p>Most businesses begin seeing noticeable improvements within 3 to 6 months, depending on competition, website quality, and consistency.</p>
+    </details>
 
-    <h3>3. Is SEO suitable for small businesses?</h3>
-    <p>Yes. SEO is especially valuable for small businesses because it helps attract customers without depending entirely on paid advertisements.</p>
+    <details class="faq-accordion">
+      <summary>3. Is SEO suitable for small businesses?</summary>
+      <p>Yes. SEO is especially valuable for small businesses because it helps attract customers without depending entirely on paid advertisements.</p>
+    </details>
 
-    <h3>4. What is Local SEO?</h3>
-    <p>Local SEO focuses on helping businesses appear in Google Maps and local searches such as "near me" or "best service in Pondicherry."</p>
+    <details class="faq-accordion">
+      <summary>4. What is Local SEO?</summary>
+      <p>Local SEO focuses on helping businesses appear in Google Maps and local searches such as "near me" or "best service in Pondicherry."</p>
+    </details>
 
-    <h3>5. Can SEO help women entrepreneurs?</h3>
-    <p>Absolutely. SEO allows women-led businesses to reach more customers online, build credibility, and grow without requiring large advertising budgets.</p>
+    <details class="faq-accordion">
+      <summary>5. Can SEO help women entrepreneurs?</summary>
+      <p>Absolutely. SEO allows women-led businesses to reach more customers online, build credibility, and grow without requiring large advertising budgets.</p>
+    </details>
 
-    <h3>6. Is Google Business Profile important for SEO?</h3>
-    <p>Yes. A well-optimized Google Business Profile improves local visibility, increases customer trust, and supports better rankings in local search results.</p>
+    <details class="faq-accordion">
+      <summary>6. Is Google Business Profile important for SEO?</summary>
+      <p>Yes. A well-optimized Google Business Profile improves local visibility, increases customer trust, and supports better rankings in local search results.</p>
+    </details>
 
-    <h3>7. Does SEO guarantee the first position on Google?</h3>
-    <p>No ethical agency can guarantee the number one position. SEO depends on many factors, including competition, website quality, and Google's ranking algorithms.</p>
+    <details class="faq-accordion">
+      <summary>7. Does SEO guarantee the first position on Google?</summary>
+      <p>No ethical agency can guarantee the number one position. SEO depends on many factors, including competition, website quality, and Google's ranking algorithms.</p>
+    </details>
 
-    <h3>8. What is the difference between SEO and paid advertising?</h3>
-    <p>SEO focuses on earning organic traffic over time, while paid advertising provides immediate visibility but stops once the advertising budget ends.</p>
+    <details class="faq-accordion">
+      <summary>8. What is the difference between SEO and paid advertising?</summary>
+      <p>SEO focuses on earning organic traffic over time, while paid advertising provides immediate visibility but stops once the advertising budget ends.</p>
+    </details>
 
-    <h3>9. Do I need a website for SEO?</h3>
-    <p>Yes. A website serves as the foundation of your SEO strategy and allows Google to index and rank your content effectively.</p>
+    <details class="faq-accordion">
+      <summary>9. Do I need a website for SEO?</summary>
+      <p>Yes. A website serves as the foundation of your SEO strategy and allows Google to index and rank your content effectively.</p>
+    </details>
 
-    <h3>10. Does BM TechX provide SEO services outside Pondicherry?</h3>
-    <p>Yes. BM TechX also supports businesses in Cuddalore, Villupuram, and nearby regions with customized SEO strategies designed for local growth.</p>
+    <details class="faq-accordion">
+      <summary>10. Does BM TechX provide SEO services outside Pondicherry?</summary>
+      <p>Yes. BM TechX also supports businesses in Cuddalore, Villupuram, and nearby regions with customized SEO strategies designed for local growth.</p>
+    </details>
 
     <h2>Final Thoughts</h2>
     <p>Whether you're running a restaurant in White Town, a clinic in Lawspet, a boutique in Muthialpet, a construction company in Villupuram, or a home-based business in Cuddalore, investing in SEO services in Pondicherry is one of the smartest long-term decisions you can make.</p>
@@ -311,7 +466,7 @@
         <li>✅ FREE Website SEO Audit</li>
         <li>✅ Customized SEO Proposal for Your Business</li>
       </ul>
-      <a class="cta-btn" href="https://wa.me/919944288271?text=Hi%2C%20I%20came%20from%20the%20BM%20TECHX%20blog.%20I%E2%80%99d%20like%20to%20get%20my%20FREE%20GMB%20and%20Website%20SEO%20audit.">📲 WhatsApp: 99442 88271 — Get Your Free Audit</a>
+      <a class="cta-btn" href="https://wa.me/919944940051?text=Hi%2C%20I%20came%20from%20the%20BM%20TECHX%20blog.%20I%E2%80%99d%20like%20to%20get%20my%20FREE%20GMB%20and%20Website%20SEO%20audit.">📲 WhatsApp: 99449 40051 — Get Your Free Audit</a>
       <p style="margin-top:14px;font-size:14px;">Let's identify opportunities, strengthen your online presence, and create an SEO strategy that helps your business grow across Pondicherry, Cuddalore, and Villupuram.</p>
     </div>
 
@@ -348,14 +503,40 @@
 
 <footer>
   <div class="fwrap">
-    <h4>BM Techx</h4>
-    <p>Innovate, Accelerate, and Grow Your Revenue. Our services are tailored to ensure that businesses can effectively establish and grow their online visibility.</p>
-    <div style="margin-top:20px;">
-      <h4>Contact Us</h4>
-      <div class="contact-line">Phone: <a href="tel:+919944940051">+91 9944940051</a></div>
-      <div class="contact-line">Address: No: 252, 2nd Floor, M G Road, Kottakuppam, Vanur, Tamil Nadu 605104</div>
+    <div class="footer-left">
+      <div class="footer-brand">
+        <img src="../assets/img/logo/Logo bmtech.png" alt="BM Techx Logo" style="width: 160px;" />
+      </div>
+      <p>Innovate, Accelerate, and Grow Your Revenue. Our services are tailored to ensure that businesses can effectively establish and grow their online visibility.</p>
     </div>
-    <div class="copyright">&copy; BMTechx.in. All Rights Reserved.</div>
+    
+    <div class="footer-right">
+      <h4 class="footer-title">Contact Us</h4>
+      
+      <div class="footer-contact-item">
+        <div class="footer-icon-box">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+        <div class="footer-contact-text">
+          <h5>Phone</h5>
+          <a href="tel:+919944940051">+91 99449 40051</a>
+        </div>
+      </div>
+      
+      <div class="footer-contact-item">
+        <div class="footer-icon-box">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </div>
+        <div class="footer-contact-text">
+          <h5>Address</h5>
+          <p>No: 252, 2nd Floor, M G Road, Kottakuppam, Vanur, Tamil Nadu 605104</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright">
+    &copy; 2026 <span>BMTechx.in</span> . All Rights Reserved.
   </div>
 </footer>
 
