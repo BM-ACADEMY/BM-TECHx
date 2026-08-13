@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Design in Pondicherry: The Complete Guide for Businesses to Grow Online (2026) | BM TechX</title>
+<style>
+  :root{
+    --indigo:#3730a3;
+    --blue:#1d4ed8;
+    --blue-bg:#dbeafe;
+    --green:#16a34a;
+    --green-bg:#eafaf0;
+    --navy:#161629;
+    --text:#111318;
+    --gray:#6b7280;
+    --page-bg:#f7f8fa;
+    --card-border:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--page-bg);
+    color:var(--text);
+    line-height:1.5;
+  }
+  a{color:var(--blue);text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:32px 24px 0 24px;
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+  }
+  .main{
+    flex:1 1 680px;
+    max-width:700px;
+    min-width:0;
+  }
+  .sidebar{
+    flex:0 0 320px;
+    width:320px;
+    position:sticky;
+    top:24px;
+  }
+  .category-pill{
+    display:inline-block;
+    background:var(--blue-bg);
+    color:var(--blue);
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:.04em;
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  h1.title{
+    font-size:34px;
+    font-weight:800;
+    line-height:1.2;
+    margin:0 0 16px 0;
+    color:#000;
+  }
+  .byline{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    color:var(--gray);
+    font-size:14px;
+    padding-bottom:20px;
+    border-bottom:1px solid var(--card-border);
+    margin-bottom:24px;
+  }
+  .hero-img{
+    width:100%;
+    border-radius:16px;
+    object-fit:cover;
+    height:360px;
+  }
+  .caption{
+    font-style:italic;
+    color:var(--gray);
+    font-size:13px;
+    margin:8px 0 32px 0;
+  }
+  h2{
+    font-size:23px;
+    font-weight:800;
+    color:#0d0f14;
+    margin:40px 0 16px 0;
+  }
+  h3{
+    font-size:19px;
+    font-weight:700;
+    color:#0d0f14;
+    margin:28px 0 12px 0;
+  }
+  p{
+    font-size:16px;
+    line-height:1.7;
+    margin:0 0 16px 0;
+  }
+  ul{
+    padding-left:36px;
+    margin:0 0 20px 0;
+  }
+  li{
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:6px;
+  }
+  .section-img{
+    width:100%;
+    border-radius:16px;
+    object-fit:cover;
+    height:280px;
+    margin:16px 0 8px 0;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:16px 0 24px 0;
+    font-size:15px;
+  }
+  th,td{
+    border:1px solid var(--card-border);
+    padding:10px 14px;
+    text-align:left;
+  }
+  th{
+    background:#f0f1f4;
+    font-weight:700;
+    color:#0d0f14;
+  }
+  .cta-btn{
+    display:block;
+    width:fit-content;
+    margin:32px auto;
+    padding:14px 30px;
+    border-radius:999px;
+    color:#fff;
+    font-weight:700;
+    font-size:15px;
+    text-align:center;
+  }
+  .cta-indigo{background:var(--indigo);}
+  .cta-green{background:var(--green);}
+  .final-cta{
+    background:linear-gradient(135deg,#3730a3,#4f46e5);
+    border-radius:16px;
+    padding:40px 32px;
+    margin:48px 0 32px 0;
+    color:#fff;
+    text-align:center;
+  }
+  .final-cta h2{
+    color:#fff;
+    margin-top:0;
+    font-size:26px;
+  }
+  .final-cta p{
+    color:#d7d5f7;
+    max-width:520px;
+    margin:0 auto 20px auto;
+  }
+  .final-cta ul{
+    list-style:none;
+    padding:0;
+    margin:0 0 24px 0;
+    display:inline-block;
+    text-align:left;
+    color:#e6e5fb;
+  }
+  .final-cta li{margin-bottom:8px;font-size:15px;}
+  .final-btn{
+    display:inline-block;
+    background:#fff;
+    color:var(--indigo);
+    font-weight:800;
+    padding:14px 32px;
+    border-radius:999px;
+    font-size:15px;
+  }
+  .faq-item{margin-bottom:12px;border:1px solid var(--card-border);border-radius:8px;background:#fff;overflow:hidden;}
+  .faq-item .faq-q{padding:16px;font-size:17px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#111;}
+  .faq-item .faq-q::-webkit-details-marker{display:none;}
+  .faq-item .faq-q::after{content:'+';font-size:22px;line-height:1;color:var(--indigo);transition:transform 0.2s ease;}
+  .faq-item[open] .faq-q::after{content:'-';}
+  .faq-item[open] .faq-q{border-bottom:1px solid var(--card-border);}
+  .faq-item p{padding:16px;margin:0;color:var(--text);font-size:16px;}
+  /* Sidebar cards */
+  .card{
+    background:#fff;
+    border:1px solid var(--card-border);
+    border-radius:16px;
+    padding:20px;
+    margin-bottom:20px;
+  }
+  .card-label{
+    text-transform:uppercase;
+    font-size:11px;
+    color:var(--gray);
+    font-weight:700;
+    letter-spacing:.04em;
+    margin-bottom:12px;
+  }
+  .brand-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+  }
+  .logo-circle{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#f5c518;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    color:#161629;
+    font-size:14px;
+    flex-shrink:0;
+  }
+  .brand-name{font-weight:800;font-size:15px;color:#0d0f14;}
+  .card p.desc{
+    font-size:14px;
+    color:#4b5563;
+    margin:0 0 14px 0;
+  }
+  .divider{
+    border:none;
+    border-top:1px solid var(--card-border);
+    margin:14px 0;
+  }
+  .tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tag{
+    background:#f0f1f4;
+    color:#4b5563;
+    font-size:12px;
+    padding:5px 12px;
+    border-radius:999px;
+  }
+  .card-green{
+    background:var(--green-bg);
+    border:none;
+  }
+  .card-green h3{
+    color:var(--green);
+    margin-top:0;
+    font-size:18px;
+  }
+  .card-green p{
+    font-size:14px;
+    color:#374151;
+    margin-bottom:16px;
+  }
+  .wa-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--green);
+    color:#fff;
+    font-weight:700;
+    padding:12px 0;
+    border-radius:999px;
+    font-size:14px;
+  }
+  footer{
+    background:var(--navy);
+    color:#c7c7d6;
+    margin-top:48px;
+    padding:40px 24px 20px 24px;
+  }
+  .footer-inner{
+    max-width:1180px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .footer-brand{
+    font-size:20px;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:6px;
+  }
+  .footer-tagline{
+    font-size:14px;
+    color:#9ca3af;
+    margin-bottom:24px;
+  }
+  .footer-contact{
+    font-size:14px;
+    margin-bottom:20px;
+    line-height:1.8;
+  }
+  .footer-contact strong{color:#fff;}
+  .footer-divider{
+    border:none;
+    border-top:1px solid #2b2b45;
+    margin:20px 0;
+  }
+  .copyright{
+    font-size:12px;
+    color:#7d7d94;
+  }
+  @media (max-width:900px){
+    .container{flex-direction:column;padding:20px 16px 0 16px;}
+    .sidebar{width:100%;position:static;}
+    h1.title{font-size:26px;}
+    .hero-img{height:220px;}
+    .section-img{height:200px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <main class="main">
+    <span class="category-pill">Website Design &amp; Development</span>
+    <h1 class="title">Website Design in Pondicherry: The Complete Guide for Businesses to Grow Online (2026)</h1>
+    <div class="byline">
+      <span>👤 BM TechX Team</span>
+      <span>📅 2026</span>
+    </div>
+    <img class="hero-img" src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&q=80&auto=format&fit=crop" alt="Professional website design being built on a laptop">
+    <p class="caption">A professional website is your business's most valuable digital asset — open 24 hours a day.</p>
+
+    <p><strong>Quick Answer:</strong> Looking for website design in Pondicherry? A professional website helps your business build trust, attract customers from Google, generate more enquiries, and grow online. Whether you're a startup, small business, clinic, restaurant, boutique, or woman entrepreneur in Pondicherry, Cuddalore, Villupuram, Dindivanam, or anywhere in Tamil Nadu, a well-designed website is your business's most valuable digital asset.</p>
+
+    <h2>Why Every Business in Pondicherry Needs a Website</h2>
+    <p>Today's customers don't just walk into a shop. They first search online. They compare businesses. They read reviews. They visit websites. Only then do they decide whom to contact.</p>
+    <p>Imagine someone searching:</p>
+    <ul>
+      <li>Best Interior Designer in Pondicherry</li>
+      <li>Dental Clinic near me</li>
+      <li>Boutique in Villupuram</li>
+      <li>Restaurant in White Town</li>
+      <li>Water Purifier Dealer in Cuddalore</li>
+    </ul>
+    <p>If your business has a professional website, you immediately build trust. If not, many customers may choose your competitor. That's why website design in Pondicherry has become essential for every growing business.</p>
+
+    <h2>What is a Business Website?</h2>
+    <p>A business website is your online office. It showcases your business information, products and services, contact details, customer reviews, photos, pricing (if applicable), business location, WhatsApp contact, and online enquiry forms.</p>
+    <p>Unlike social media, your website is fully under your control and is available 24 hours a day.</p>
+
+    <a class="cta-btn cta-indigo" href="https://wa.me/919944509441?text=Hi%2C%20I%27d%20like%20a%20FREE%20GMB%20%26%20Website%20Audit">🚀 Get Your Free Consultation</a>
+
+    <h2>Why Businesses in Tamil Nadu Need Professional Website Design</h2>
+    <p>Pondicherry and nearby districts such as Cuddalore, Villupuram, and Dindivanam are growing rapidly. Customers now expect every genuine business to have a professional website.</p>
+    <p>Whether someone wants to book a doctor, order food, compare builders, contact a salon, or find coaching classes — their first step is usually Google. A well-designed website helps your business appear professional and increases customer confidence.</p>
+
+    <h2>Businesses That Need a Website</h2>
+    <img class="section-img" src="./img/business that need a website.jpeg" alt="Local businesses that benefit from a professional website">
+    <p>Almost every business benefits from having a website. Examples include:</p>
+    <ul>
+      <li>Restaurants, Hotels</li>
+      <li>Clinics, Hospitals, Dental Centres</li>
+      <li>Beauty Salons, Fitness Studios</li>
+      <li>Boutiques, Jewellery Shops, Home Bakers</li>
+      <li>Builders, Interior Designers, Real Estate Companies</li>
+      <li>Coaching Centres, Schools</li>
+      <li>Travel Agencies, Automobile Dealers, Water Purifier Businesses</li>
+      <li>Consultants, Digital Marketing Agencies</li>
+    </ul>
+    <p>Whether your business is new or established, a website supports long-term growth.</p>
+
+    <h2>Benefits of Website Design in Pondicherry</h2>
+    <h3>Build Customer Trust</h3>
+    <p>A professional website creates a positive first impression. Customers feel more confident when they see business details, professional photos, customer testimonials, contact information, and service descriptions.</p>
+    <h3>Improve Google Visibility</h3>
+    <p>An SEO-friendly website can appear in Google search results when customers search for businesses like yours — for example, "Best Restaurant Pondicherry" or "Boutique Villupuram." This helps bring consistent organic traffic.</p>
+    <h3>Generate More Enquiries</h3>
+    <p>Your website works around the clock. Even when your office is closed, customers can fill out enquiry forms, send WhatsApp messages, call directly, or browse your services.</p>
+    <h3>Showcase Products &amp; Services</h3>
+    <p>Instead of sending product details individually, customers can explore everything on your website. This saves time and improves customer experience.</p>
+    <h3>Strengthen Your Brand</h3>
+    <p>A professionally designed website reflects your business identity through logo, colors, typography, images, and brand messaging. Strong branding helps customers remember your business.</p>
+
+    <a class="cta-btn cta-green" href="https://wa.me/919944509441?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20website%20design%20for%20my%20business">💬 Chat With Us on WhatsApp</a>
+
+    <h2>Types of Websites for Local Businesses</h2>
+    <img class="section-img" src="./img/types of website.jpeg" alt="Different types of business websites shown on a screen">
+    <h3>Business Website</h3>
+    <p>Ideal for agencies, consultants, builders, interior designers, and service providers. A business website focuses on services, company profile, and lead generation.</p>
+    <h3>Portfolio Website</h3>
+    <p>Suitable for photographers, designers, architects, and freelancers. It highlights completed work and builds credibility.</p>
+    <h3>E-Commerce Website</h3>
+    <p>Perfect for businesses selling products online. Features may include product listings, shopping cart, secure payments, and order management.</p>
+    <h3>Restaurant Website</h3>
+    <p>Useful features include online menu, gallery, reservation forms, location map, and WhatsApp ordering.</p>
+    <h3>Clinic Website</h3>
+    <p>Healthcare websites often include doctor profiles, appointment booking, patient testimonials, services, and contact information.</p>
+
+    <h2>Features Every Modern Website Should Have</h2>
+    <p>A professional website should include:</p>
+    <ul>
+      <li>Mobile Responsive Design</li>
+      <li>Fast Loading Speed</li>
+      <li>SEO-Friendly Structure</li>
+      <li>WhatsApp Integration</li>
+      <li>Google Maps</li>
+      <li>Contact Forms</li>
+      <li>SSL Security</li>
+      <li>Easy Navigation</li>
+      <li>Call-to-Action Buttons</li>
+      <li>Social Media Links</li>
+    </ul>
+    <p>These features improve both customer experience and search engine performance.</p>
+
+    <h2>Website vs Social Media</h2>
+    <p>Many business owners ask, "I already have Instagram. Do I still need a website?" Yes.</p>
+    <table>
+      <thead>
+        <tr><th>Website</th><th>Social Media</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>You own the platform</td><td>Controlled by algorithms</td></tr>
+        <tr><td>Available 24/7</td><td>Posts disappear quickly</td></tr>
+        <tr><td>Supports Google SEO</td><td>Limited search visibility</td></tr>
+        <tr><td>Professional business identity</td><td>Brand awareness</td></tr>
+        <tr><td>Generates enquiries</td><td>Generates engagement</td></tr>
+        <tr><td>Displays complete business information</td><td>Limited content space</td></tr>
+        <tr><td>Long-term digital asset</td><td>Depends on platform updates</td></tr>
+      </tbody>
+    </table>
+    <p>The best strategy is to use both together. Social media attracts attention. Your website converts visitors into customers.</p>
+
+    <a class="cta-btn cta-indigo" href="https://wa.me/919944509441?text=Hi%2C%20I%27d%20like%20a%20professional%20website%20for%20my%20business">🚀 Build Your Website Today</a>
+
+    <h2>Common Website Mistakes Businesses Make</h2>
+    <p>Many businesses lose potential customers because of avoidable mistakes. Examples include:</p>
+    <ul>
+      <li>Slow loading website</li>
+      <li>Poor mobile experience</li>
+      <li>Outdated design</li>
+      <li>Broken contact forms</li>
+      <li>Missing WhatsApp button</li>
+      <li>No Google Maps integration</li>
+      <li>Weak SEO</li>
+      <li>Poor navigation</li>
+      <li>Low-quality images</li>
+      <li>Missing calls-to-action</li>
+    </ul>
+    <p>A professionally developed website avoids these issues and provides a better user experience.</p>
+
+    <h2>Why SEO Matters in Website Design</h2>
+    <p>A beautiful website alone won't generate customers. It also needs to be optimized for search engines. SEO-friendly websites include optimized page titles, meta descriptions, location-based keywords, image optimization, internal linking, fast performance, and mobile responsiveness. This helps your website appear in Google searches and attract potential customers.</p>
+
+    <h2>Real Example: A Boutique in Pondicherry</h2>
+    <img class="section-img" src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&q=80&auto=format&fit=crop" alt="Boutique store in Pondicherry">
+    <p>Imagine a boutique in Pondicherry that relies only on Instagram. Customers keep asking for product details through direct messages. Many enquiries are missed.</p>
+    <p>After launching a professional website: products are organized, a WhatsApp enquiry button is added, Google starts indexing pages, customers browse anytime, and orders become easier to manage.</p>
+    <p>The boutique receives more website visitors, increased customer enquiries, better online credibility, and higher sales opportunities.</p>
+
+    <h2>Why Women Entrepreneurs Should Have a Website</h2>
+    <img class="section-img" src="./img/women enterpre.jpeg" alt="Woman entrepreneur running a home-based business">
+    <p>Many women entrepreneurs successfully run businesses from home. Examples include home bakeries, handmade jewellery, boutique stores, tailoring services, beauty professionals, home catering, and gift businesses.</p>
+    <p>A website helps them build credibility, reach more customers, accept enquiries anytime, showcase products professionally, and grow without depending only on social media. Even a simple website can make a powerful first impression.</p>
+
+    <h2>Why Small Businesses Should Invest in Website Design</h2>
+    <p>Some business owners think websites are only for large companies. That's no longer true. Today, customers expect every genuine business to have an online presence.</p>
+    <p>Whether you own a café, a clinic, a salon, a coaching centre, a retail shop, a construction company, or a startup — a website helps customers discover your business, understand your services, and contact you with confidence.</p>
+
+    <h2>Why Choose BM TechX for Website Design in Pondicherry?</h2>
+    <p>At BM TechX, we create websites that are designed to help businesses grow—not just look attractive. Our website design services include:</p>
+    <ul>
+      <li>Business Websites</li>
+      <li>Corporate Websites</li>
+      <li>Portfolio Websites</li>
+      <li>E-Commerce Websites</li>
+      <li>Landing Pages</li>
+      <li>SEO-Friendly Development</li>
+      <li>Mobile Responsive Design</li>
+      <li>WhatsApp Integration</li>
+      <li>Google Maps Integration</li>
+      <li>Contact Forms</li>
+      <li>Speed Optimization</li>
+      <li>Website Maintenance</li>
+    </ul>
+    <p>We proudly work with businesses across Pondicherry, Cuddalore, Villupuram, Dindivanam, and throughout Tamil Nadu, delivering websites that are modern, user-friendly, and optimized for search engines.</p>
+    <p>As part of the ABM ecosystem, our learning partner BM Academy has successfully trained more than 1,400 learners and helped 150+ students secure real job placements. This practical digital experience allows us to create websites aligned with today's SEO standards and customer expectations.</p>
+    <p><strong>Our mission is simple: Professional Website → Better Online Visibility → More Enquiries → Business Growth</strong></p>
+
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <details class="faq-item">
+      <summary class="faq-q">1. Why does my business need a website?</summary>
+      <p>A website helps customers find your business, learn about your services, build trust, and contact you easily. It also supports Google rankings and digital marketing efforts.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">2. Is a website important for small businesses?</summary>
+      <p>Yes. Even a small business can compete effectively online with a professional website and strong local SEO strategy.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">3. Will my website work on mobile phones?</summary>
+      <p>Yes. Modern websites should be fully responsive and work smoothly on mobiles, tablets, laptops, and desktops.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">4. Can my website appear on Google?</summary>
+      <p>Yes. An SEO-friendly website with quality content can rank on Google for relevant searches over time.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">5. How long does it take to build a website?</summary>
+      <p>The timeline depends on the number of pages, features, and customization required. Simpler websites are generally completed faster than complex projects.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">6. Can I update my website later?</summary>
+      <p>Yes. New pages, blogs, products, and services can be added as your business grows.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">7. Is WhatsApp integration possible?</summary>
+      <p>Yes. A WhatsApp button can be integrated into your website, making it easier for customers to contact you directly.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">8. Do I still need social media if I have a website?</summary>
+      <p>Yes. Social media and websites work best together. Social media attracts visitors, while your website provides detailed information and converts enquiries.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">9. Can BM TechX redesign my existing website?</summary>
+      <p>Yes. We can redesign outdated websites to improve design, speed, SEO, mobile responsiveness, and user experience.</p>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-q">10. Does BM TechX provide website design services across Tamil Nadu?</summary>
+      <p>Yes. BM TechX serves businesses in Pondicherry, Cuddalore, Villupuram, Dindivanam, and across Tamil Nadu, delivering customized websites for businesses of every size.</p>
+    </details>
+
+    <h2>Final Thoughts</h2>
+    <p>A professional website is more than just an online brochure—it's the foundation of your digital presence. It helps customers discover your business, builds credibility, supports SEO, and generates enquiries around the clock.</p>
+    <p>Whether you're a startup, a growing small business, or an established company, investing in website design in Pondicherry is one of the smartest decisions you can make for long-term business growth.</p>
+    <p>At BM TechX, we build websites that are fast, mobile-friendly, SEO-ready, and designed to convert visitors into customers. Our goal is to help businesses across Pondicherry, Cuddalore, Villupuram, Dindivanam, and Tamil Nadu grow confidently in the digital world.</p>
+
+    <div class="final-cta">
+      <h2>🚀 Get Your FREE GMB &amp; Website Audit</h2>
+      <p>Want to know if your website is helping your business grow—or holding it back? Our experts will review your website and Google Business Profile, identify improvement opportunities, and prepare a customized proposal based on your business goals.</p>
+      <ul>
+        <li>✅ FREE Website Audit</li>
+        <li>✅ FREE Google Business Profile Audit</li>
+        <li>✅ Customized Website &amp; Digital Marketing Proposal</li>
+      </ul>
+      <br>
+      <a class="final-btn" href="https://wa.me/919944509441?text=Hi%2C%20I%27d%20like%20my%20FREE%20Website%20%26%20GBP%20Audit">📲 WhatsApp: 99445 09441</a>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="card">
+      <div class="card-label">About</div>
+      <div class="brand-row">
+        <div class="logo-circle">BM</div>
+        <div class="brand-name">BM TechX</div>
+      </div>
+      <p class="desc">A digital marketing agency building fast, mobile-friendly, SEO-ready websites for small businesses across Tamil Nadu.</p>
+      <hr class="divider">
+      <div class="tags">
+        <span class="tag">#WebsiteDesign</span>
+        <span class="tag">#Pondicherry</span>
+        <span class="tag">#TamilNadu</span>
+        <span class="tag">#SmallBusiness</span>
+        <span class="tag">#SEOFriendly</span>
+      </div>
+    </div>
+
+    <div class="card card-green">
+      <h3>Need a Consultation?</h3>
+      <p>Get a free website review for your business — no obligation.</p>
+      <a class="wa-btn" href="https://wa.me/919944509441?text=Hi%2C%20I%27d%20like%20a%20free%20website%20consultation">💬 Connect on WhatsApp</a>
+    </div>
+  </aside>
+</div>
+
+<!-- Footer Tailwind & Lucide Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        corePlugins: { 
+            preflight: false,
+            container: false
+        }
+    }
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<footer class="bg-slate-900 text-white pt-14 pb-8 relative overflow-hidden">
+    <div class="absolute inset-0 z-0 pointer-events-none opacity-10">
+        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="tech-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="1" fill="currentColor" class="text-white"></circle>
+                    <path d="M0 20 H40 M20 0 V40" fill="none" stroke="currentColor" stroke-width="0.5" class="text-white"></path>
+                    <path d="M0 40 L40 0" fill="none" stroke="currentColor" stroke-width="0.5" class="text-white" opacity="0.5"></path>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#tech-grid)"></rect>
+            <rect width="100%" height="100%" fill="url(#gradient-fade)"></rect>
+            <defs>
+                <radialGradient id="gradient-fade" cx="50%" cy="0%" r="80%" fx="50%" fy="0%">
+                    <stop offset="0%" style="stop-color:rgb(15, 23, 42); stop-opacity:0" />
+                    <stop offset="100%" style="stop-color:rgb(15, 23, 42); stop-opacity:0.8" />
+                </radialGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-2 gap-10 md:gap-20">
+            <div>
+                <img src="../assets/img/logo/Logo bmtech.png" alt="BM Techx Logo" class="w-40 mb-6" />
+                <div class="hidden">BM Techx</div>
+
+                <p class="text-slate-300 leading-relaxed text-sm text-justify">
+                    Innovate, Accelerate, and Grow Your Revenue. Our services are tailored to ensure that businesses
+                    can effectively establish and grow their online visibility.
+                </p>
+
+                <div class="flex gap-4 mt-6">
+                    <a href="https://www.facebook.com/profile.php?id=61585268211774" target="_blank"
+                        class="text-white hover:text-yellow-400 transition transform hover:scale-110"
+                        aria-label="Facebook">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/_bmtechx_/" target="_blank"
+                        class="text-white hover:text-yellow-400 transition transform hover:scale-110"
+                        aria-label="Instagram">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/106463432/admin/dashboard/" target="_blank"
+                        class="text-white hover:text-yellow-400 transition transform hover:scale-110"
+                        aria-label="linkedin">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:items-start">
+                <h3 class="text-lg font-bold text-white mb-6 border-b-2 border-yellow-500 pb-1 inline-block">Contact Us</h3>
+
+                <ul class="space-y-6 text-slate-300 text-sm" style="list-style: none; padding: 0; margin: 0;">
+                    <li class="flex items-start group" style="font-size: 14px; margin-bottom: 0;">
+                        <div class="bg-slate-800 p-2 rounded-lg mr-3 group-hover:bg-yellow-500 transition-colors duration-300">
+                            <i data-lucide="phone" class="w-5 h-5 text-yellow-500 group-hover:text-slate-900 transition-colors"></i>
+                        </div>
+                        <div>
+                            <span class="block text-white font-medium mb-1">Phone</span>
+                            <a href="tel:+919944940051" class="hover:text-yellow-400 transition block">
+                                +91 99445 09441
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="flex items-start group" style="font-size: 14px; margin-bottom: 0;">
+                        <div class="bg-slate-800 p-2 rounded-lg mr-3 group-hover:bg-yellow-500 transition-colors duration-300">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-yellow-500 group-hover:text-slate-900 transition-colors"></i>
+                        </div>
+                        <div>
+                            <span class="block text-white font-medium mb-1">Address</span>
+                            <p class="leading-relaxed">
+                                No: 252, 2nd Floor, M G Road, Kottakuppam, Vanur,
+                                Tamil Nadu 605104
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-700/50 mt-12 pt-6 text-center text-sm text-slate-400">
+            © <span id="year"></span>
+            <a href="https://bmtechx.in/" target="_blank" class="text-yellow-500 hover:text-yellow-400 font-medium ml-1">
+                BMTechx.in
+            </a>.
+            All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    lucide.createIcons();
+</script>
+</body>
+</html>
